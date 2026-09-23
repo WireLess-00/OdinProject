@@ -1,0 +1,12 @@
+/* # Ignorer TOUT par défaut */
+*
+
+/*# Exceptions (fichiers à inclure absolument) */
+!*.c
+!*.txt
+!*.gitignore
+!*.h
+
+/* # Fichiers à ignorer* /
+*.DS_Store
+*.exe
