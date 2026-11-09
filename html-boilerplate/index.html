@@ -1,40 +1,59 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Odin Project - Links and Images</title>
+</head>
+<body>
+    <!-- Page header -->
+    <header>
+        <h1>Homepage</h1>
+    </header>
+    <!-- Main content of the page -->
+    <main>
+        <!-- Hyperlinks section -->
+        <section>
+            <h2>Navigation Links</h2>
+            <a href="https://www.theodinproject.com/about">About The Odin Project1</a>
+            <a href="https://www.theodinproject.com/about" target="_blank" rel="noreferrer">About The Odin Project2</a>
+            <a href="pages/about.html">About</a>
+        </section>
+        <!--
+        LINKS NOTES:
+        <a>...</a> : Anchor Tag, create a clickable hyperlink.
+        href="..." : URL Destination.
+        target="_blank" : Open the link in a new tab/window.
+        rel="noreferrer" : Prevents the new site from knowing where the visitor came from (security).
+        rel="noopener" : Phishing protection, prevents the new tab from accessing or altering the original page.
 
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <title>My First Webpage</title>
-  </head>
+        Absolute links : Links to pages on other websites on the internet. Includes the scheme and domain name (e.g., https://www.theodinproject.com/about).
+        Relative links : Links to pages located on our own websites, path to the resource and file name (e.g., pages/about.html).
+        -->
+        <!-- Illustrations section -->
+        <section>
+            <h2>Illustration Images</h2>
+            <!-- Absolute image (loaded from the web) -->
+            <img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo" height="310" width="310">
 
-<!-- I am an html comment -->
+            <!-- Relative image (hosted on your local server) -->
+            <img src="./images/cat.jpg" alt="A cute little cat" height="310" width="310">
+        </section>
+        <!--
+        IMAGES NOTES:
+        Absolute path : Displays an image located on an external website.
+        Relative path : Displays images stored directly inside your own local website directories.
 
-  <body>
-    <h1>Hello World! 1</h1>
-    <h2>This is a heading 2</h2>
-    <h3>This is a heading 3</h3>
-    <h4>This is a heading 4</h4>
-    <h5>This is a heading 5</h5>
-    <h6>This is a heading 6</h6>
-      <p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua.</p>
+        Alt : Image description (essential for screen readers, accessibility, and SEO).
+        height/width : Recommended for reserving layout space and preventing layout shifts while loading.
+        Syntax ".." : Pointer to the parent directory, used to navigate up through multiple directories.
 
-      <p><em>Ut enim ad minim veniam,</em> quis nostrud exercitation ullamco laboris
-      nisi ut aliquip ex ea commodo consequat.</p>
-
-      <!-- I am another html comment -->
-
-      <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-      </ul>
-
-      <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-      </ol>
-
-  </body>
-
+        GitHub Commit Note : A good commit message describes the problem your commit solves and how.
+        -->
+    </main>
+    <!-- Page footer -->
+    <footer>
+        <p>&copy; 2026 - The Odin Project Exercise. All rights reserved.</p>
+    </footer>
+</body>
 </html>
